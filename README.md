@@ -8,7 +8,7 @@ Built using React
   <li>Clone this repo</li>
 </ul>
    
-    git clone git@github.com:himasnhusandha/himanshusandha.com.git
+    git clone git@github.com:himanshusandha/himanshusandha.com.git
 
     cd himanshusandha.com
 
