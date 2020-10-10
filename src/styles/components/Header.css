@@ -1,0 +1,129 @@
+.header_base {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.header_img_logo {
+  width: 8rem;
+}
+
+.header_navbar_desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_navbar_desktop > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header_navbar_desktop > ul > li {
+  float: left;
+}
+
+.header_navbar_desktop > ul > li > a {
+  display: block;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+  font-size: var(--fontMedium);
+}
+
+.header_navbar_desktop > ul > li > a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--secondaryTextColor);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.header_navbar_desktop > ul > li > a:hover::after {
+  transform: scaleX(1);
+}
+
+.header_toogle_mode {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.header_toogle_mode > img {
+  width: 5rem;
+}
+
+.header_navbar_mobile_open {
+  display: none;
+  cursor: pointer;
+  color: var(--secondaryTextColor);
+  font-size: var(--fontBig);
+}
+
+.header_navbar_mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--secondaryTextColor);
+  opacity: 0.8;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.header_navbar_mobile > ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.header_navbar_mobile > ul > li > a {
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  color: var(--primaryTextColor);
+  font-size: var(--fontMedium);
+}
+
+.header_navbar_mobile a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--primaryTextColor);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.header_navbar_mobile a:hover::after,
+.header_navbar_mobile a:focus::after {
+  transform: scaleX(1);
+}
+
+.header_navbar_mobile_closebtn {
+  cursor: pointer;
+  position: absolute;
+  top: 1.3rem;
+  right: 2.8rem;
+  font-size: var(--fontBig);
+}
+
+@media only screen and (max-width: 768px) {
+  .header_navbar_mobile_open {
+    display: unset;
+  }
+
+  .header_navbar_desktop {
+    display: none;
+  }
+}

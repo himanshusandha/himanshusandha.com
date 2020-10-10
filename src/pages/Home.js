@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
+import Intro from "../components/Intro";
 
 function Home() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <React.Fragment>
+      <Header />
+      <Intro />
+    </React.Fragment>
   );
 }
 

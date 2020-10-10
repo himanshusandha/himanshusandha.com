@@ -1,0 +1,25 @@
+.intro_base {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  background-color: var(--primaryContainerBackgroundColor);
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.intro_content {
+  text-align: center;
+  font-size: var(--fontBig);
+  line-height: 2.5rem;
+}
+
+.intro_avtar {
+  float: right;
+  filter: grayscale(150%);
+  width: 30rem;
+}
