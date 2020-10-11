@@ -75,7 +75,6 @@
   top: 0;
   left: 0;
   background-color: var(--secondaryTextColor);
-  opacity: 0.8;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -87,6 +86,8 @@
 .header_navbar_mobile > ul {
   text-align: center;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header_navbar_mobile > ul > li > a {
@@ -119,6 +120,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .header_base {
+    flex-direction: column;
+  }
+
   .header_navbar_mobile_open {
     display: unset;
   }

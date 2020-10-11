@@ -8,13 +8,20 @@ function Intro() {
       <div className="intro_base">
         <div className="intro_content">
           <h1>
-            Hello I'm
+            Hello{" "}
+            <span role="img" aria-label="wavingHand">
+              👋
+            </span>{" "}
+            I'm
             <br />
             Himanshu Sandha
           </h1>
           {"<Web Developer />"}
           <br />
-          From India 
+          From India{" "}
+          <span role="img" aria-label="flagIndian">
+            🇮🇳
+          </span>
           <br />
           exploring Javascript, React, React Native, GraphQL, Node.js
           <br />

@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: var(--primaryContainerBackgroundColor);
   padding: 1rem;
   border-radius: 1rem;
@@ -22,4 +22,5 @@
   float: right;
   filter: grayscale(150%);
   width: 30rem;
+  max-width: 100%;
 }

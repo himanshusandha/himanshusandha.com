@@ -9,6 +9,7 @@ function Header() {
 
   const toogleTheme = () => {
     setIsDark(!isDark);
+    closeNav();
   };
 
   useEffect(() => {
@@ -19,26 +20,6 @@ function Header() {
     }
   }, [isDark]);
 
-  const navbarBody = (
-    <>
-      <ul>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#blog">Blog</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-      </ul>
-      <button onClick={toogleTheme} className="header_toogle_mode">
-        {!isDark && <img src={light} alt="lightMode" />}
-        {isDark && <img src={dark} alt="darkMode" />}
-      </button>
-    </>
-  );
-
   const openNav = () => {
     document.getElementsByClassName("header_navbar_mobile")[0].style.width =
       "100%";
@@ -48,6 +29,32 @@ function Header() {
     document.getElementsByClassName("header_navbar_mobile")[0].style.width =
       "0%";
   };
+
+  const navbarBody = (
+    <>
+      <ul>
+        <li>
+          <a href="#projects" onClick={closeNav}>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#blog" onClick={closeNav}>
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="#about" onClick={closeNav}>
+            About
+          </a>
+        </li>
+      </ul>
+      <button onClick={toogleTheme} className="header_toogle_mode">
+        {!isDark && <img src={light} alt="lightMode" />}
+        {isDark && <img src={dark} alt="darkMode" />}
+      </button>
+    </>
+  );
 
   return (
     <React.Fragment>
