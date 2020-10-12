@@ -3,7 +3,7 @@ html {
   --primaryBackgroundColor: #f5f6f7;
   --primaryContainerBackgroundColor: #ffffff;
   --primaryTextColor: #000000;
-  --secondaryTextColor: #da70d6;
+  --secondaryTextColor: #ff1493;
   --fontBig: 1.25rem; /*20px*/
   --fontMedium: 1rem; /*16px*/
   --fontSmall: 0.875rem; /*14px*/
@@ -14,7 +14,7 @@ html.dark {
   --primaryBackgroundColor: #3c3c3c;
   --primaryContainerBackgroundColor: #252525;
   --primaryTextColor: #ffffff;
-  --secondaryTextColor: #da70d6;
+  --secondaryTextColor: #ff1493;
 }
 
 body {

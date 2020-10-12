@@ -1,21 +1,19 @@
 .intro_base {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-left: 2rem;
   margin-right: 2rem;
   background-color: var(--primaryContainerBackgroundColor);
   padding: 1rem;
   border-radius: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
+  word-break: break-word;
 }
 
 .intro_content {
   text-align: center;
-  font-size: var(--fontBig);
-  line-height: 2.5rem;
 }
 
 .intro_avtar {
@@ -23,4 +21,93 @@
   filter: grayscale(150%);
   width: 30rem;
   max-width: 100%;
+}
+
+.intro_content_name {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.intro_content_tag_up {
+  position: relative;
+  bottom: -0.5rem;
+  left: -10rem;
+  opacity: 0.2;
+  color: var(--secondaryTextColor);
+  font-family: monospace;
+  line-height: 0%;
+  font-weight: 1000;
+}
+
+.intro_content_tag_down {
+  position: relative;
+  bottom: 0.3rem;
+  right: -22rem;
+  opacity: 0.2;
+  color: var(--secondaryTextColor);
+  font-family: monospace;
+  line-height: 0%;
+  font-weight: 1000;
+  max-width: fit-content;
+}
+
+.intro_content_tech {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--secondaryTextColor);
+}
+
+.intro_content_location {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.intro_content_lang {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.intro_content_company {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.intro_content_mail {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--secondaryTextColor);
+}
+
+.intro_content_lang_tag_up {
+  position: relative;
+  left: -6rem;
+  opacity: 0.4;
+  font-family: monospace;
+  line-height: 0%;
+  font-weight: 1000;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro_content_mail {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .intro_content_tag_down {
+    right: -15rem;
+  }
+
+  .intro_content_tag_up {
+    left: -7rem;
+  }
+}
+
+@media only screen and (max-width: 358px) {
+  .intro_content_tag_down {
+    right: -10rem;
+  }
 }
