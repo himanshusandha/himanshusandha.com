@@ -1,29 +1,36 @@
 /* html light-dark global variables & values   */
+@font-face {
+  font-family: robotoFont;
+  src: url(./font/Roboto-Regular.ttf);
+}
+
 html {
   --primaryBackgroundColor: #f5f6f7;
   --primaryContainerBackgroundColor: #ffffff;
-  --primaryTextColor: #000000;
+  --primaryTextColor: #424242;
   --secondaryTextColor: #ff1493;
   --fontBig: 1.25rem; /*20px*/
   --fontMedium: 1rem; /*16px*/
   --fontSmall: 0.875rem; /*14px*/
   --borderColor: lightgrey;
+  --fontBigger: 2.3rem;
 }
 
 html.dark {
   --primaryBackgroundColor: #3c3c3c;
   --primaryContainerBackgroundColor: #252525;
-  --primaryTextColor: #ffffff;
+  --primaryTextColor: #f2f2f2;
   --secondaryTextColor: #ff1493;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: robotoFont;
   background-color: var(--primaryBackgroundColor);
   color: var(--primaryTextColor);
 }
