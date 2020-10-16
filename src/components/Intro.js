@@ -72,6 +72,7 @@ function Intro() {
         </div>
         <img src={avtar} alt="avtar" className="intro_avtar" />
       </div>
+      <div className="intro_tech_logo_background" />
     </React.Fragment>
   );
 }

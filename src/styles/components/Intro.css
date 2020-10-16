@@ -90,6 +90,31 @@
   font-size: 1.2rem;
 }
 
+.intro_tech_logo_background {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background-image: url("../../resources/Javascript_logo.svg");
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: changeBackground 12s infinite;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("../../resources/Javascript_logo.svg");
+  }
+  25% {
+    background-image: url("../../resources/React_logo.svg");
+  }
+  50% {
+    background-image: url("../../resources/GraphQL_logo.svg");
+  }
+  75% {
+    background-image: url("../../resources/Nodejs_logo.svg");
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .intro_content_mail {
     margin-bottom: 1.5rem;
