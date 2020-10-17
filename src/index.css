@@ -8,19 +8,20 @@ html {
   --primaryBackgroundColor: #f5f6f7;
   --primaryContainerBackgroundColor: #ffffff;
   --primaryTextColor: #424242;
-  --secondaryTextColor: #ff1493;
+  --secondaryTextColor: #8f0b82; /*ff1493*/
   --fontBig: 1.25rem; /*20px*/
   --fontMedium: 1rem; /*16px*/
   --fontSmall: 0.875rem; /*14px*/
   --borderColor: lightgrey;
   --fontBigger: 2.3rem;
+  --fontSmallest: 0.625rem; /*10px*/
 }
 
 html.dark {
   --primaryBackgroundColor: #3c3c3c;
   --primaryContainerBackgroundColor: #252525;
   --primaryTextColor: #f2f2f2;
-  --secondaryTextColor: #ff1493;
+  --secondaryTextColor: #9b0c88; /*ff1493*/
 }
 
 body {
