@@ -135,7 +135,7 @@
 
   .privateProjects_showcase_big_right {
     border-top-right-radius: 0rem;
-    border-bottom-left-radius: 0rem;
+    border-bottom-left-radius: 1rem;
   }
 
   .privateProjects_showcase_big_medium {

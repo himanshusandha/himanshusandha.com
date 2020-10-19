@@ -1,0 +1,8 @@
+.home_link_tag {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+  font-size: var(--fontMedium);
+}

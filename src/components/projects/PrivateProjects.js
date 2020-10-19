@@ -75,7 +75,7 @@ function PrivateProjects() {
             </div>
           </div>
           <div className="privateProjects_showcase_big_medium_moreCome">
-            And much more to come.......
+            and much more to come.......
           </div>
         </div>
       </div>

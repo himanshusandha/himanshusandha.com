@@ -1,0 +1,29 @@
+.footer_base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  background-color: #252525;
+  height: 20rem;
+}
+
+.footer_base > div {
+  margin: 1rem;
+}
+
+.footer_links_to_contact {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer_link_tag {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+
+.footer_link_tag > img {
+  width: 2rem;
+  color: var(--primaryTextColor);
+}

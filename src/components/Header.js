@@ -3,6 +3,7 @@ import "../styles/components/Header.css";
 import logo from "../resources/logo.png";
 import dark from "../resources/dark.png";
 import light from "../resources/light.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isDark, setIsDark] = useState(false);
@@ -59,9 +60,9 @@ function Header() {
   return (
     <React.Fragment>
       <div className="header_base">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="@himanshuSandha" className="header_img_logo" />
-        </a>
+        </Link>
         <div className="header_navbar_desktop">{navbarBody}</div>
         <div className="header_navbar_mobile_open" onClick={openNav}>
           &#9776;
