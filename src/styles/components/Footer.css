@@ -18,6 +18,23 @@
   align-items: center;
 }
 
+.footer_links_to_contact > a {
+  margin-left: 0.5rem;
+}
+
+.footer_link_email {
+  border: 0.1rem solid var(--borderColor);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-size: var(--fontBig);
+}
+
+.footer_link_email:hover {
+  background-color: var(--secondaryTextColor);
+  color: white;
+  border-color: var(--secondaryTextColor);
+}
+
 .footer_link_tag {
   text-decoration: none;
   color: var(--secondaryTextColor);

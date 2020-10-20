@@ -8,8 +8,15 @@ import { Link } from "react-router-dom";
 function Header() {
   const [isDark, setIsDark] = useState(false);
 
+  useEffect(() => {
+    if (localStorage.getItem("themeMode")) {
+      setIsDark(localStorage.getItem("themeMode"));
+    }
+  }, []);
+
   const toogleTheme = () => {
     setIsDark(!isDark);
+    localStorage.setItem("themeMode", isDark);
     closeNav();
   };
 
