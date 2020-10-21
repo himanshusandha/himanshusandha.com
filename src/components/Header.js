@@ -52,9 +52,9 @@ function Header() {
           </a>
         </li>
         <li>
-          <a href="#about" onClick={closeNav}>
+          <Link to="/about" onClick={closeNav}>
             About
-          </a>
+          </Link>
         </li>
       </ul>
       <button onClick={toogleTheme} className="header_toogle_mode">

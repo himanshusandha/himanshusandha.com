@@ -1,0 +1,21 @@
+.about_base {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  margin-top: 4rem;
+}
+
+.about_base_left {
+  text-align: center;
+}
+
+.about_base_left > img {
+  width: 60%;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 10px var(--primaryTextColor));
+}
+
+.about_base_right {
+  text-align: center;
+}
