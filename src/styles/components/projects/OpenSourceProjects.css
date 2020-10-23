@@ -1,0 +1,130 @@
+.openSourceProjects_base {
+  margin: 2rem;
+}
+
+.openSourceProjects_title {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  font-size: var(--fontBigger);
+  color: var(--secondaryTextColor);
+  text-align: center;
+}
+
+.openSourceProjects_title_tag_up {
+  position: relative;
+  bottom: -0.5rem;
+  left: -10rem;
+  opacity: 0.2;
+  color: var(--primaryTextColor);
+  font-family: monospace;
+  line-height: 0%;
+  font-weight: 1000;
+  z-index: -1;
+}
+
+.openSourceProjects_title_tag_down {
+  position: relative;
+  bottom: 0.6rem;
+  left: 60%;
+  opacity: 0.2;
+  color: var(--primaryTextColor);
+  font-family: monospace;
+  line-height: 0%;
+  font-weight: 1000;
+  max-width: fit-content;
+  z-index: -1;
+}
+
+.openSourceProjects_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.openSourceProjects_info_left {
+  line-height: 1.6;
+  opacity: 0.8;
+  font-size: var(--fontBig);
+}
+
+.openSourceProjects_info_right {
+  width: 50rem;
+  max-width: 100%;
+  filter: invert(50%);
+  transition: all 0.25s ease-in 0s;
+}
+
+.openSourceProjects_info_right:hover {
+  transform: scale(1.05);
+  filter: invert(100%);
+}
+
+.openSourceProjects_link_tag {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+}
+
+.openSourceProjects_list {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.openSourceProjects_list_individual {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--primaryTextColor);
+  background-color: var(--primaryContainerBackgroundColor);
+  width: 22.5rem;
+  height: fit-content;
+}
+
+.openSourceProjects_list_individual_title {
+  color: var(--secondaryTextColor);
+  font-size: var(--fontBigger);
+  word-wrap: break-word;
+}
+
+.openSourceProjects_list_individual_hr {
+  margin-top: -1rem;
+  border-bottom: 0.1rem dotted var(--secondaryTextColor);
+}
+
+.openSourceProjects_list_individual_lang_star {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.openSourceProjects_list_individual_dates {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: -1rem;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: bisque;
+  font-size: var(--fontSmall);
+}
+
+@media only screen and (max-width: 371px) {
+  .openSourceProjects_title_tag_up {
+    left: -6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .openSourceProjects_info {
+    flex-direction: column;
+  }
+
+  .openSourceProjects_list_individual {
+    width: 100%;
+  }
+}
