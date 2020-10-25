@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/components/blog/BlogList.css";
 import dataObject from "../../content/blog/index";
+import { Link } from "react-router-dom";
 
 function BlogList() {
   return (
@@ -16,7 +17,10 @@ function BlogList() {
             return (
               <div key={idx}>
                 <div className="blogList_list_individual">
-                  <div className="blogList_list_individual_left">
+                  <Link
+                    to={fieldValue.data.html_url}
+                    className="blogList_list_individual_left"
+                  >
                     <p className="blogList_list_individual_left_title">
                       {fieldValue.data.title}
                     </p>
@@ -31,7 +35,7 @@ function BlogList() {
                       {fieldValue.data.subTitle}
                     </p>
                     <p>Read ➜</p>
-                  </div>
+                  </Link>
                   <img
                     src={fieldValue.data.image}
                     alt="logo"

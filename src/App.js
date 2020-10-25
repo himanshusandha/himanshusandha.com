@@ -8,6 +8,8 @@ import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import DetailedBlog from "./components/blog/DetailedBlog";
+import dataObject from "./content/blog/index";
 
 function App() {
   return (
@@ -21,9 +23,16 @@ function App() {
         <Route path="/projects">
           <Projects />
         </Route>
-        <Route path="/blog">
+        <Route exact path="/blog">
           <Blog />
         </Route>
+        {dataObject.map((fieldValue, idx) => {
+          return (
+            <Route path={fieldValue.data.html_url} key={idx}>
+              <DetailedBlog data={fieldValue.data} />
+            </Route>
+          );
+        })}
         <Route path="/about">
           <About />
         </Route>
