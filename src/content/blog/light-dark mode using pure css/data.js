@@ -1,5 +1,6 @@
 import React from "react";
 import image from "./image.png";
+import Code from "../../../components/Code";
 
 export const data = {
   html_url: "/blog/light-dark-mode-using-pure-css",
@@ -44,8 +45,21 @@ function body() {
         <code>
           <strong>html</strong>
         </code>{" "}
-        attribute
+        tag whose values would be reused further everywhere(if need in nesting)
+        in styling for light mode.
       </p>
+      <Code
+        data={
+          <>
+            <span>html {`{`}</span>
+            <span>{"  "}--primaryBackgroundColor: #f5f6f7;</span>
+            <span>{"  "}--primaryContainerBackgroundColor: #ffffff;</span>
+            <span>{"  "}--primaryTextColor: #424242;</span>
+            <span>{"  "}--secondaryTextColor: #8f0b82;</span>
+            <span>{`}`}</span>
+          </>
+        }
+      />
     </React.Fragment>
   );
 }

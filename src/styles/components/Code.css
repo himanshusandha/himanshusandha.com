@@ -1,0 +1,32 @@
+.code_base {
+  background-color: rgb(1, 22, 39);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: rgb(214, 222, 235);
+  display: block;
+  overflow-y: hidden;
+  overflow-x: visible;
+  padding: 1rem;
+  counter-reset: line;
+}
+
+.code_base > pre > span {
+  line-height: 1.6;
+  display: block;
+  white-space: pre-wrap;
+}
+
+.code_base > pre > span::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-right: 1rem;
+  color: #888;
+  font-family: monospace;
+}
+
+.code_base_highlight {
+  background-color: #022a4b;
+  border-left: 0.3em solid #ef5350;
+}
