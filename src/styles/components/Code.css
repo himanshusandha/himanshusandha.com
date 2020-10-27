@@ -13,7 +13,7 @@
 .code_base > pre > span {
   line-height: 1.6;
   display: block;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
 }
 
 .code_base > pre > span::before {
@@ -29,4 +29,9 @@
 .code_base_highlight {
   background-color: #022a4b;
   border-left: 0.3em solid #ef5350;
+}
+
+.code_base_comment {
+  color: rgb(99, 119, 119);
+  font-style: italic;
 }

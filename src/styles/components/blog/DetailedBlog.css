@@ -45,3 +45,9 @@
 .detailedBlog_content > p {
   line-height: 1.6;
 }
+
+.detailedBlog_content_highlight {
+  background-color: var(--secondaryTextColor);
+  color: white;
+  padding: 0.2rem;
+}
