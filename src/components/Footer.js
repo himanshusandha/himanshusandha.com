@@ -53,7 +53,7 @@ function Footer() {
         </a>
       </div>
       <div>
-        Copyright © 2020{" "}
+        Copyright © {new Date().getFullYear()}{" "}
         <Link to="/" onClick={scrollToTop} className="footer_link_tag">
           @himanshusandha
         </Link>
