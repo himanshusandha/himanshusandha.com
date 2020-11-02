@@ -6,17 +6,17 @@ import light from "../resources/light.png";
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
-  const [isDark, setIsDark] = useState(false);
+  const themeModePrefered =
+    localStorage.getItem("themeMode") &&
+    localStorage.getItem("themeMode") === "true"
+      ? true
+      : false;
 
-  useEffect(() => {
-    if (localStorage.getItem("themeMode")) {
-      setIsDark(localStorage.getItem("themeMode"));
-    }
-  }, []);
+  const [isDark, setIsDark] = useState(themeModePrefered);
 
   const toogleTheme = () => {
     setIsDark(!isDark);
-    localStorage.setItem("themeMode", isDark);
+    localStorage.setItem("themeMode", !isDark);
     closeNav();
   };
 
